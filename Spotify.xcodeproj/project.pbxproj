@@ -29,6 +29,7 @@
 		0A58FD2D2BDFDB7600D019B1 /* AudioTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58FD2C2BDFDB7600D019B1 /* AudioTrack.swift */; };
 		0A58FD2F2BDFDB8200D019B1 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58FD2E2BDFDB8200D019B1 /* Artist.swift */; };
 		0A58FD312BDFDB9600D019B1 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58FD302BDFDB9600D019B1 /* UserProfile.swift */; };
+		0A58FD332BE5211600D019B1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58FD322BE5211600D019B1 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		0A58FD2C2BDFDB7600D019B1 /* AudioTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTrack.swift; sourceTree = "<group>"; };
 		0A58FD2E2BDFDB8200D019B1 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		0A58FD302BDFDB9600D019B1 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		0A58FD322BE5211600D019B1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				0A58FCF62BDE859600D019B1 /* SceneDelegate.swift */,
 				0A58FCFD2BDE859700D019B1 /* Assets.xcassets */,
 				0A58FCFF2BDE859700D019B1 /* LaunchScreen.storyboard */,
+				0A58FD322BE5211600D019B1 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				0A58FD172BDFDA7B00D019B1 /* AuthViewController.swift in Sources */,
 				0A58FCF52BDE859600D019B1 /* AppDelegate.swift in Sources */,
 				0A58FD312BDFDB9600D019B1 /* UserProfile.swift in Sources */,
+				0A58FD332BE5211600D019B1 /* Extensions.swift in Sources */,
 				0A58FD132BDFDA3900D019B1 /* LibraryViewController.swift in Sources */,
 				0A58FD2F2BDFDB8200D019B1 /* Artist.swift in Sources */,
 				0A58FD212BDFDADD00D019B1 /* PlaylistViewController.swift in Sources */,
@@ -419,6 +423,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,6 +451,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
