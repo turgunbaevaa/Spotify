@@ -23,6 +23,7 @@ class PlayerViewController: UIViewController {
     private let imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
         return imageView
     }()
     
@@ -54,8 +55,8 @@ class PlayerViewController: UIViewController {
     
     private func configure() {
         imageView.sd_setImage(with: dataSource?.imageURL, completed: nil)
-        controlsView.configure(with: PlayerControlsViewViewModel(title: dataSource?.songName,
-                                                                 subtitle: dataSource?.subtitle))
+        controlsView.configure(with: PlayerControlsViewViewModel(title: dataSource?.songName ?? "",
+                                                                 subtitle: dataSource?.subtitle ?? ""))
     }
 
     private func configureBarButtons() {
@@ -72,7 +73,9 @@ class PlayerViewController: UIViewController {
     }
     
     func refreshUI() {
-        configure()
+        DispatchQueue.main.async {
+            self.configure()
+        }
     }
 }
 

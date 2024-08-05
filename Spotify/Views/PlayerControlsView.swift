@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 protocol PlayerControlsViewDelegate: AnyObject {
     func playerControlsViewDidTapPlayPauseButton(_ playerControlsView: PlayerControlsView)
     func playerControlsViewDidTapForwardButton(_ playerControlsView: PlayerControlsView)
@@ -33,7 +34,6 @@ final class PlayerControlsView: UIView {
     
     private let nameLabel: UILabel = {
         let label = UILabel()
-        label.text = "This is My Song"
         label.numberOfLines = 1
         label.font = .systemFont(ofSize: 20, weight: .semibold)
         return label
@@ -41,7 +41,6 @@ final class PlayerControlsView: UIView {
     
     private let subtitleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Drake (feat. Some Other Artist)"
         label.numberOfLines = 1
         label.font = .systemFont(ofSize: 18, weight: .regular)
         label.textColor = .secondaryLabel
@@ -111,7 +110,7 @@ final class PlayerControlsView: UIView {
     }
     
     @objc private func didTapPlayPause() {
-        self.isPlaying = !isPlaying
+        isPlaying.toggle()
         delegate?.playerControlsViewDidTapPlayPauseButton(self)
         
         //Update icon
